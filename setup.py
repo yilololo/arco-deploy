@@ -9,6 +9,7 @@ setup(
         'fabric',
         'click',
         'loguru'
+        'omegaconf'
     ],
     entry_points={
         'console_scripts': [
