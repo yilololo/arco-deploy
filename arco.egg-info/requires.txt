@@ -1,4 +1,4 @@
-fabric
-click
-loguru
-omegaconf
+fabric>=2.5.0
+click>=7.0
+loguru>=0.5.0
+omegaconf>=2.1.0

@@ -1,7 +1,19 @@
 Metadata-Version: 2.1
 Name: arco
-Version: 0.1
-Requires-Dist: fabric
-Requires-Dist: click
-Requires-Dist: loguru
-Requires-Dist: omegaconf
+Version: 0.1.0
+Summary: A deployment tool for Arco services
+Author: yilo
+Author-email: lylhaha01@outlook.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: fabric>=2.5.0
+Requires-Dist: click>=7.0
+Requires-Dist: loguru>=0.5.0
+Requires-Dist: omegaconf>=2.1.0

@@ -1,4 +1,3 @@
 arco_deploy
 arco_init
-arco_tool
 config
