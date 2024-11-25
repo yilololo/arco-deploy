@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='arco-deploy',
+    name='arco',
     version='0.1',
     py_modules=['arco_deploy'],
     packages=find_packages(),
@@ -17,7 +17,10 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'arco-deploy=arco_deploy:ssh_and_execute',
+            'arco-deploy=arco_deploy:main',
         ],
+        'console_scripts': [
+            'arco-init=arco_init:main'
+        ]
     },
 )
