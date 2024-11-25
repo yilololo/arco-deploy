@@ -1,0 +1,76 @@
+# deploy_arco -s backend/frontend/discord -e dev/prod
+backend:
+  prod:
+    - host: 47.236.183.112
+      port: 22
+      path: /home/arco/arco-backend
+      command: 
+        "git checkout branch": git -C {path} checkout master
+        "git checkout commit": git -C {path} checkout {commit}
+        "git pull": git -C {path} pull
+        "docker compose": docker compose -f {path}/deployment/docker-compose.{env}.yaml up -d --build
+    - host: 8.219.69.133
+      port: 22
+      path: /home/arco/arco-backend
+      command:
+        "git checkout branch": git -C {path} checkout master
+        "git checkout commit": git -C {path} checkout {commit}
+        "git pull": git -C {path} pull
+        "docker compose": docker compose -f {path}/deployment/docker-compose.{env}.yaml up -d --build
+  dev:
+    - host: 47.237.107.234
+      port: 22
+      path: /home/arco/arco-backend
+      command:
+        "git checkout branch": git -C {path} checkout master
+        "git checkout commit": git -C {path} checkout {commit}
+        "git pull": git -C {path} pull
+        "docker compose": docker compose -f {path}/deployment/docker-compose.{env}.yaml up -d --build
+
+frontend:
+  prod:
+    - host: 47.236.183.112
+      port: 22
+      path: /home/arco/arco-web
+      command: 
+        "git checkout branch": git -C {path} checkout master
+        "git checkout commit": git -C {path} checkout {commit}
+        "git pull": git -C {path} pull
+        "docker compose": docker compose -f {path}/deployment/docker-compose.{env}.yaml up -d --build
+    - host: 8.219.69.133
+      port: 22
+      path: /home/arco/arco-web
+      command: 
+        "git checkout branch": git -C {path} checkout master
+        "git checkout commit": git -C {path} checkout {commit}
+        "git pull": git -C {path} pull
+        "docker compose": docker compose -f {path}/deployment/docker-compose.{env}.yaml up -d --build
+  dev:
+    - host: 47.237.107.234
+      port: 22
+      path: /home/arco/arco-web
+      command: 
+        "git checkout branch": git -C {path} checkout master
+        "git checkout commit": git -C {path} checkout {commit}
+        "git pull": git -C {path} pull
+        "docker compose": docker compose -f {path}/deployment/docker-compose.{env}.yaml up -d --build
+
+discord:
+  prod:
+    - host: 47.236.183.112
+      port: 22
+      path: /home/arco/arco-discord
+      command: 
+        "git checkout branch": git -C {path} checkout master
+        "git checkout commit": git -C {path} checkout {commit}
+        "git pull": git -C {path} pull
+        "docker compose": docker compose -f {path}/deployment/docker-compose.{env}.yaml up -d --build
+  dev:
+    - host: 47.237.107.234
+      port: 22
+      path: /home/arco/arco-discord
+      command: 
+        "git checkout branch": git -C {path} checkout master
+        "git checkout commit": git -C {path} checkout {commit}
+        "git pull": git -C {path} pull
+        "docker compose": docker compose -f {path}/deployment/docker-compose.{env}.yaml up -d --build
