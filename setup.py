@@ -13,7 +13,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'arloy=main:ssh_and_execute',
+            'arco-deploy=arco_deploy:ssh_and_execute',
         ],
     },
 )
