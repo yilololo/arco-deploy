@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='arco-deploy',
     version='0.1',
-    py_modules=['main'],
+    py_modules=['arco_deploy'],
     packages=find_packages(),
     package_data={
         '': ['*.yml']
