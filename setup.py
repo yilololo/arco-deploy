@@ -8,7 +8,7 @@ setup(
     install_requires=[
         'fabric',
         'click',
-        'loguru'
+        'loguru',
         'omegaconf'
     ],
     entry_points={
