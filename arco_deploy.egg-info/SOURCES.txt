@@ -1,8 +1,0 @@
-main.py
-setup.py
-arco_deploy.egg-info/PKG-INFO
-arco_deploy.egg-info/SOURCES.txt
-arco_deploy.egg-info/dependency_links.txt
-arco_deploy.egg-info/entry_points.txt
-arco_deploy.egg-info/requires.txt
-arco_deploy.egg-info/top_level.txt

@@ -1,2 +1,0 @@
-[console_scripts]
-arloy = main:ssh_and_execute
