@@ -14,7 +14,7 @@ package-lock.json
 /dist
 /.next
 /out
-*.egg-info
+/*.egg-info
 
 # Environment Variables
 .env
