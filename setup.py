@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='arco',
     version='0.1',
-    py_modules=['arco_deploy'],
+    py_modules=['arco_tool'],
     packages=find_packages(),
     package_data={
         '': ['*.yml']
@@ -18,8 +18,6 @@ setup(
     entry_points={
         'console_scripts': [
             'arco-deploy=arco_deploy:main',
-        ],
-        'console_scripts': [
             'arco-init=arco_init:main'
         ]
     },

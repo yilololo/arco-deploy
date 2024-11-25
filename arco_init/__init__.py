@@ -1,3 +1,3 @@
-from .arco_init import load_config, CONFIG_FILE
+from .arco_init import main, CONFIG_FILE, load_config
 
-__all__ = ["Config", CONFIG_FILE]
+__all__ = ["main", "CONFIG_FILE", "load_config"]
