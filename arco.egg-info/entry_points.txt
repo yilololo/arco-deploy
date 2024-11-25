@@ -1,3 +1,0 @@
-[console_scripts]
-arco-deploy = arco_deploy.arco_deploy:main
-arco-init = arco_init.arco_init:main
