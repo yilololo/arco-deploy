@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='arco',
+    name='orca',
     version='0.1.0',
     description='A deployment tool for Arco services',
     author='yilo',
@@ -19,8 +19,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'arco-deploy=arco_deploy.arco_deploy:main',
-            'arco-init=arco_init.arco_init:main'
+            'orca=orca.main:cli'
         ]
     },
     python_requires='>=3.6',

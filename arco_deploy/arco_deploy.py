@@ -6,7 +6,7 @@ import click
 from loguru import logger
 from arco_init import CONFIG_FILE, load_config
 # 创建连接并执行命令
-@click.command(name="arco-deploy")
+@click.command(name="deploy")
 @click.option('--service', '-s', 
               type=click.Choice(['backend', 'frontend', 'discord']), 
               required=True,

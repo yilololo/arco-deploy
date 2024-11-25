@@ -19,7 +19,7 @@ def save_config(config_data):
         json.dump(config_data, f)
 
 
-@click.command(name="arco-init")
+@click.command(name="init")
 @click.option('--identity_file_path', '-i',
               type=click.Path(exists=True),
               required=True,
