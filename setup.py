@@ -8,6 +8,7 @@ setup(
     install_requires=[
         'fabric',
         'click',
+        'loguru'
     ],
     entry_points={
         'console_scripts': [
