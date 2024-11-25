@@ -6,7 +6,7 @@ setup(
     py_modules=['arco_deploy'],
     packages=find_packages(),
     package_data={
-        'arco-deploy': ['*.yml']
+        '': ['*.yml']
     },
     include_package_data=True,
     install_requires=[
