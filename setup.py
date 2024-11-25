@@ -6,8 +6,8 @@ setup(
     py_modules=['main'],
     packages=find_packages(),
     package_data={
-        'arco_deploy': ['*.yaml']
-    }
+        '': ['*.yml']
+    },
     include_package_data=True,
     install_requires=[
         'fabric',
