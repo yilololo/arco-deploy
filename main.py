@@ -16,6 +16,7 @@ from loguru import logger
               help='Environment to deploy to (dev/prod)')
 @click.option('--identity_file_path', '-i',
               type=click.Path(exists=True),
+              required=True,
               help='Path to the key file')
 @click.option('--commit', '-c',
               help='Commit version')
